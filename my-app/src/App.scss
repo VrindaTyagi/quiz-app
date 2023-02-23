@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-base: 'Poppins', sans-serif;
+  --color-purple: rgba(175, 156, 243, 1);
+  --color-light-red: rgba(255, 59, 63, 1);
+  --color-light-green: rgba(68, 183, 123, 1) ;
+  --color-red: rgba(255, 59, 63, 1);
+  --color-grey: rgba(243, 244, 250, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-dark-grey: rgba(153, 153, 153, 1);
+  --color-white: rgba(255, 255, 255, 1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+main {
+  display: flex;
+  font-family: var( --font-base);
+  font-weight:  600;
+  div{
+    border: 2px solid red;
+  }
+  height: 100vh;
+  width: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: 2em;
+  padding-block-end: 2em;
+  background: linear-gradient(180deg, rgba(175, 156, 243, 0) 7.92%, #AF9CF3 86.48%);
+}
+
+.quiz__label{
+  display: flex;
+  width: 12em;
+  height: 12em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6em;
+  background-color: var(--color-white);
+  color: var(--color-red);
+  font-weight: 800;
+  p{
+    font-size: x-large;
+  }
+}

@@ -1,26 +1,33 @@
-import './App.scss'
+// import './App.scss'
 import React from 'react'
 import Button from '@mui/material/Button';
+import QuestionScreen from './components/QuestionScreen';
+import { useState } from 'react';
 
 function App() {
 
+  const [start, setStart] = useState(false);
+
   return (
     <>
-      <main>
-        <div>Upraised</div>
-        <div className='quiz__label'>
-          <p>Quiz</p>
-        </div>
-        <div>
-        <Button variant="contained"
-         sx={{
-          width: '80vw',
-          borderRadius: "2em",
-          backgroundColor: 'var( --color-red)',
-        }}
-        >Start</Button>
-        </div>
-      </main>
+      {start ? <QuestionScreen /> :
+        (<main>  <div>upraised</div>
+          <div className='quiz__label'>
+            <p>Quiz</p>
+          </div>
+          <div>
+            <Button variant="contained"
+              onClick={() => setStart(true)}
+              sx={{
+                width: '80vw',
+                height: '3em',
+                borderRadius: "2em",
+                backgroundColor: 'var( --color-red)',
+                fontFamily: 'var(--font-base)'
+              }}
+            >Start</Button>
+          </div></main>
+        )}
     </>
   )
 }

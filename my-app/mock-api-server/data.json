@@ -1,0 +1,44 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "The word 'psychology' comes from",
+            "option1": "Latin",
+            "option2": "Spanish",
+            "option3": "Greek",
+            "option4": "Italian",
+            "answer": "Greek",
+            "timeTaken": 0
+        },
+        {
+            "id": 2,
+            "question": "Psychology is defined as the scientific study of",
+            "option1": "people and things",
+            "option2": "emotions and beliefs",
+            "option3": "perception and religion",
+            "option4": "mind and behaviour",
+            "answer": "mind and behaviour",
+            "timeTaken": 0
+        },
+        {
+            "id": 3,
+            "question": "Different people react differently to the same situation. This is referred to as",
+            "option1": "multiple determinants",
+            "option2": "nativism",
+            "option3": "the Simpson effect",
+            "option4": "individual differences",
+            "answer": "individual differences",
+            "timeTaken": 0
+        },
+        {
+            "id": 4,
+            "question": "Most human behaviour",
+            "option1": "can be easily explained",
+            "option2": "has multiple causes",
+            "option3": "stems from unconscious desires",
+            "option4": "depends on social influence",
+            "answer": "has multiple causes",
+            "timeTaken": 0
+        }
+    ]
+}

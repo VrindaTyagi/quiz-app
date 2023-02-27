@@ -17,6 +17,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: var(  --font-base);
 }
 
 a {
@@ -52,5 +53,107 @@ main {
   font-weight: 800;
   p{
     font-size: x-large;
+  }
+}
+.background {
+  background-color: var(--color-purple);
+  width: auto;
+  height: 100vh;
+  // div{
+  //   border: 2px solid red;
+  // }
+  .confetti {
+    position: relative;
+    bottom: 2.5em;
+    display: flex;
+    width: 100%;
+  }
+
+  .questions_bg {
+    background-color: var(--color-white);
+    z-index: 2;
+    width: auto;
+    height: 88%;
+    border-top-left-radius: 2em;
+    position: relative;
+    border-top-right-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    bottom: 3em;
+    align-items: center;
+    padding-inline: 1.5em;
+
+   div {
+    margin-block: 0.5em;
+   }
+
+    .question_text {
+      font-weight: 600;
+      margin-block-start: -2em;
+    }
+
+    .question_image{
+      height: 1.5em;
+      width: 1.5em;
+
+    }
+
+    .options_container {
+      width: 100%;
+      height: 100%;
+      div {
+        background-color: var(--color-grey);
+        height: 4em;
+        display: flex;
+        align-items: center;
+        border-radius: 0.5em;
+      }
+    }
+
+    .numbering_circle {
+      width: 7em;
+      height: 7em;
+      bottom: 3em;
+      border-radius: 4em;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color-white);
+    }
+
+    .inner_numbering_circle {
+      width: 6em;
+      height: 6em;
+      border-radius: 4em ;
+      border: 0.5em solid rgba(243, 244, 250, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .numbering {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 2px;
+    }
+    .bigger_number {
+      font-family: 'Nunito', sans-serif;
+      font-size: 3em;
+      font-style: italic;
+      font-weight: 900;
+    }
+    .smaller_number {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1em;
+      top: 0.7em;
+      position: relative;
+      font-style: italic;
+      font-weight: 900;
+      color: var(--color-dark-grey);
+    }
   }
 }
